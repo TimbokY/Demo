@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <style>
+    #container {
+      width: 100%;
+      height: 100%;
+      display: flex;
+      flex-wrap: wrap;
+    }
+    .item {
+      width: 100px;
+      height: 100px;
+      background-color: #000;
+      margin: 5px;
+    }
+  </style>
+</head>
+<body>
+  <div id="container"></div>
+</body>
+</html>
+<script>
+  const COLOR = [];
+  const DIV = [
+    [1,1,1,1,1,1,1,1,1,1,1,1],
+    [1,1,1,1,1,1,1,1,1,1,1,1],
+    [1,1,1,1,1,1,1,1,1,1,1,1],
+    [1,1,1,1,1,1,1,1,1,1,1,1],
+    [1,1,1,1,1,1,1,1,1,1,1,1],
+    [1,1,1,1,1,1,1,1,1,1,1,1],
+  ];
+  let isCreat = false;
+  let isStart = true;
+  let init = '';
+  function createDiv() {
+    const container = document.getElementById('container');
+    let itemHtml = '';
+    DIV.map(item=>{
+      item.map(item1=>{
+        if(item1===1) {
+          itemHtml += "<div class='item' onclick='stop()'></div>";
+        }
+      })
+    })
+    container.innerHTML = itemHtml;
+    isCreat = true;
+  }
+  function changeColor() {
+    const itemArray = document.getElementsByClassName('item');
+    for(let i = 0; i<itemArray.length; i++){
+      itemArray[i].style.backgroundColor = `#${Math.random().toString(16).substr(9)}`;
+    }
+  }
+  createDiv();
+  function stop() {
+    if(isStart && isCreat) {
+      init = setInterval('changeColor()', 50);
+      isStart = false;
+    }else{
+      clearInterval(init);
+      isStart = true;
+    }
+  }
+</script>
