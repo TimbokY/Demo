@@ -60,7 +60,6 @@ sfin.payableInvoice:
   model.payableInvoice.deliveredNum: 妥投数量
   model.payableInvoice.accpetNum: 验收数量
   model.payableInvoice.billOrigin: 订单来源
-
   view.title.apply: 应付发票申请
   view.message.confirm.create: 是否创建发票?
   view.message,notification.validate.approve: 验证通过
@@ -72,3 +71,5 @@ sfin.payableInvoice:
   view.title.bill: 对账规则配置
   view.message.tab.noAccount: 未对账
   view.message.tab.alreadyAccount: 已对账
+  view.title.orderDetail: 订单明细
+  view.message.title.orderDetail.tab.row: 明细

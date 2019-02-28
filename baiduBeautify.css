@@ -1,0 +1,114 @@
+/* 去除首页广告 */
+.s-mancacrd-main {
+  display: none;
+}
+#s_top_wrap {
+  display: none;
+}
+.no-qrcode-layer {
+display: none;
+}
+
+/* 去除搜索结果广告 */
+#content_left > .result-op {
+display: none;
+}
+/* 美化搜索结果 */
+.result {
+  padding: 30px;
+  border-radius: 5px;
+box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.2);
+}
+.result:hover {
+  padding: 30px;
+  border-radius: 5px;
+box-shadow: 0 2px 4px -1px rgba(0, 0, 0, 0.2), 0 4px 5px 0 rgba(0, 0, 0, 0.14),
+    0 1px 10px 0 rgba(0, 0, 0, 0.12);
+}
+.result > div {
+margin-top: 10px;
+}
+
+#u > a {
+  text-decoration: none;
+}
+
+.s_form {
+  zoom: 1;
+  height: auto;
+  padding: 5px 0 15px 15px;
+}
+#s_tab {
+  background: #f8f8f8;
+  line-height: 36px;
+  height: 38px;
+  padding: 80px 0 0 127px;
+  float: none;
+  zoom: 1;
+}
+
+#content_left {
+padding-left: 127px;
+}
+
+.s_ipt_wr {
+height: 40px;
+}
+
+.s_btn {
+height: 42px
+}
+
+.s_ipt {
+  margin: 9px 0 0 7px;
+}
+
+#result_logo {
+  margin: 9px 0 0;
+}
+
+.ipt_rec:after {
+  display: none;
+}
+.ipt_rec {
+  width: 0px;
+  height: 0px;
+}
+.nums {
+  margin: 0px 0 0 127px;
+  height: 42px;
+  line-height: 42px;
+}
+#content_right {
+  margin-top: 80px;
+}
+
+/*
+.cr-title {
+  border: 1px dashed #d9d9d9;
+  padding: 5px;
+  border-radius: 10px;
+}
+
+.c-span4:hover {
+box-shadow: 0 2px 4px -1px rgba(0, 0, 0, 0.2), 0 4px 5px 0 rgba(0, 0, 0, 0.14),
+    0 1px 10px 0 rgba(0, 0, 0, 0.12);
+}
+*/
+
+.cr-title-sub {
+  text-decoration: none;
+}
+
+#head .bdsug {
+top: 42px;
+}
+
+.bdsug li {
+padding: 5px;
+}
+.bdsug li:hover {
+padding: 8px;
+}
+
+
