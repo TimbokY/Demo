@@ -3,7 +3,8 @@ const excelPort = require('excel-export');
 const fs = require("fs");
 const path = require('path');
 
-const promptCode = 'sslm.supplierReview';
+// 国际化code值
+const promptCode = 'sfin.payableInvoice';
 
 exports.write = function(req, res, next) {
   const yamlData = YAML.parse(fs.readFileSync('./index.yml').toString());
@@ -51,7 +52,7 @@ exports.write = function(req, res, next) {
   conf.rows = array;
   const result = excelPort.execute(conf);
 
-  const random = `${new Date().valueOf()}`.substr(9);
+  const random = `${new Date().toLocaleDateString()}`;
 
   const uploadDir = 'Excel/';
   const filePath = uploadDir + filename + random + ".xlsx";
