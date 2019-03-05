@@ -10,6 +10,7 @@
   "license": "ISC",
   "dependencies": {
     "excel-export": "^0.5.1",
+    "lodash": "^4.17.11",
     "xlsx": "^0.14.1",
     "yamljs": "^0.3.0"
   }

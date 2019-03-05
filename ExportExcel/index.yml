@@ -5,9 +5,9 @@ sfin.payableInvoice:
   model.payableInvoice.invoiceState: 开票方式
   model.payableInvoice.afterSalesStatus: 售后状态
   model.payableInvoice.deliverTime: 妥投时间
-  modal.payableInvoice.srmPoNum: SRM订单号
-  modal.payableInvoice.deliverTimeFrom: 妥投日期从
-  modal.payableInvoice.deliverTimeTo: 妥投日期至
+  model.payableInvoice.srmPoNum: SRM订单号
+  model.payableInvoice.deliverTimeFrom: 妥投日期从
+  model.payableInvoice.deliverTimeTo: 妥投日期至
   model.payableInvoice.invoiceLineNum: 发票行号
   model.payableInvoice.ecProductNum: 商品编码
   model.payableInvoice.ecProductName: 商品名称
@@ -52,10 +52,10 @@ sfin.payableInvoice:
   model.payableInvoice.purchaseAgentName: 采购员
   model.payableInvoice.createName: 创建人
   model.payableInvoice.creationDate: 创建日期
-  modal.payableInvoice.creationDateFrom: 创建日期从
-  modal.payableInvoice.creationDateTo: 创建日期至
-  modal.payableInvoice.deliverTimeStart: 妥投日期从
-  modal.payableInvoice.deliverTimeEnd: 妥投日期至
+  model.payableInvoice.creationDateFrom: 创建日期从
+  model.payableInvoice.creationDateTo: 创建日期至
+  model.payableInvoice.deliverTimeStart: 妥投日期从
+  model.payableInvoice.deliverTimeEnd: 妥投日期至
   model.payableInvoice.billNum: 开票申请单号
   model.payableInvoice.deliveredNum: 妥投数量
   model.payableInvoice.accpetNum: 验收数量
