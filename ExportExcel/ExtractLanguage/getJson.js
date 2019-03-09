@@ -2,23 +2,27 @@ const fs = require('fs');
 
 const { unionBy } = require('lodash');
 
-const newFileList = [];
-
 // 获取文件夹下所有文件名的相对路劲
 function readFolderFun(folderSrc) {
-  const fileList = fs.readdirSync(folderSrc);
-  for(let i = 0; i<fileList.length; i++) {
-    const stats = fs.statSync(`${folderSrc}/${fileList[i]}`)
-    var isDir = stats.isDirectory();
-    var isFile = stats.isFile();
-    if(isDir) {
-      readFolderFun(`${folderSrc}/${fileList[i]}`);
+  try {
+    const newFileList = [];
+    const fileList = fs.readdirSync(folderSrc);
+    for(let i = 0; i<fileList.length; i++) {
+      const stats = fs.statSync(`${folderSrc}/${fileList[i]}`)
+      var isDir = stats.isDirectory();
+      var isFile = stats.isFile();
+      if(isDir) {
+        readFolderFun(`${folderSrc}/${fileList[i]}`);
+      }
+      if(isFile) {
+        newFileList.push(`${folderSrc}/${fileList[i]}`);
+      }
     }
-    if(isFile) {
-      newFileList.push(`${folderSrc}/${fileList[i]}`);
-    }
+    return newFileList;
+  } catch(err) {
+    console.log(err);
   }
-  return newFileList;
+
 }
 
 function readFileFun(PATH) {
