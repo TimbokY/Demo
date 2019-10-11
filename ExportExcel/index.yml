@@ -1,4 +1,4 @@
-sfin.payableInvoice:
+sfin.payableInvoice.model:
   model.payableInvoice.ecPoNum: 父订单号
   model.payableInvoice.ecPoSubNum: 子订单号
   model.payableInvoice.currency: 币种

@@ -5,7 +5,7 @@ const path = require('path');
 const { readFileFun } = require('./getJson');
 
 // 国际化文件
-const PATH = '../../../../Project/hzero-platform-fe/src/routes/sfin/PayableInvoice';
+const PATH = '../../../../Project/hzero-platform-fe/src/routes/sfin/AutoAccount';
 // 国际化code值
 const promptCode = 'sfin.payableInvoice';
 
