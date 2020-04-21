@@ -52,22 +52,15 @@
 </head>
 <body>
   <h1>写给cmm💘</h1>
-  <div class="word"><p>写给臭妹妹的</p></div>
+  <div class="word"><p class="cmm"></p></div>
   <p><p class="btn">丶一下</p></p>
 </body>
 <script>
+  var arr = [
+    '你别对我笑，我怕以后得不到，又忘不掉。',
+  ];
   $(".btn").click(function() {
-    $.ajax({
-    type: 'GET',
-    // dataType:'jsonp',
-    url: "https://api.lovelive.tools/api/SweetNothings",
-    success: function(result) {
-      console.log(result);
-    },
-    // error: function(error) {
-    //   console.log(error);
-    // },
-    });
-});
+    $('.cmm').innerText = arr[0];
+  });
 </script>
 </html>

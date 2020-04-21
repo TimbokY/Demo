@@ -4,7 +4,7 @@ const fs = require("fs");
 const path = require('path');
 
 // 国际化code值
-const promptCode = 'sfin.payableInvoice';
+const promptCode = 'spcm.common';
 
 exports.write = function(req, res, next) {
   const yamlData = YAML.parse(fs.readFileSync('./index.yml').toString());
