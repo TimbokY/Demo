@@ -11,7 +11,7 @@
   "dependencies": {
     "excel-export": "^0.5.1",
     "lodash": "^4.17.13",
-    "xlsx": "^0.14.1",
+    "xlsx": "^0.17.0",
     "yamljs": "^0.3.0"
   }
 }
